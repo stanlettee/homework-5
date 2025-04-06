@@ -160,7 +160,7 @@
       });
     }
   }
-})({"5j6Kf":[function(require,module,exports,__globalThis) {
+})({"1h9Rl":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -168,7 +168,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "d68ad56631b563d9";
+module.bundle.HMR_BUNDLE_ID = "3de6a0a3c52b8c02";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -666,10 +666,69 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"a0t4e":[function(require,module,exports,__globalThis) {
-var _pressKey = require("./js/press-key");
-var _chart = require("./js/chart");
+},{}],"7ZNkn":[function(require,module,exports,__globalThis) {
+const keys = [
+    'q',
+    'w',
+    'e',
+    'r',
+    't',
+    'y',
+    'u',
+    'i',
+    'o',
+    'p',
+    'a',
+    's',
+    'd',
+    'f',
+    'g',
+    'h',
+    'j',
+    'k',
+    'l',
+    'z',
+    'x',
+    'c',
+    'v',
+    'b',
+    'n',
+    'm'
+];
+let currentKeyIndex = 0;
+const keyElement = document.querySelector('#key');
+const statusElement = document.querySelector('#status');
+const newGameButton = document.querySelector('#new-game');
+keyElement.innerHTML = keys[0];
+function updateKey() {
+    if (currentKeyIndex < keys.length) keyElement.textContent = keys[currentKeyIndex];
+    else {
+        keyElement.textContent = '';
+        statusElement.textContent = "\u0412\u0438 \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u043B\u0438 \u0433\u0440\u0443";
+        PNotify.success({
+            text: "\u0413\u0440\u0443 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u043E"
+        });
+    }
+}
+function startNewGame() {
+    currentKeyIndex = 0;
+    statusElement.textContent = "\u041D\u0430\u0442\u0438\u0441\u043D\u0438 \u0432\u043A\u0430\u0437\u0430\u043D\u0443 \u043A\u043B\u0430\u0432\u0456\u0448\u0443:";
+    updateKey();
+    PNotify.info({
+        text: "\u041D\u043E\u0432\u0430 \u0433\u0440\u0430 \u0440\u043E\u0437\u043F\u043E\u0447\u0430\u043B\u0430\u0441\u044C"
+    });
+}
+document.addEventListener('keydown', (event)=>{
+    const pressedKey = event.key.toLowerCase();
+    if (pressedKey === keys[currentKeyIndex]) {
+        currentKeyIndex += 1;
+        updateKey();
+    } else PNotify.error({
+        text: `\u{41F}\u{43E}\u{43C}\u{438}\u{43B}\u{43A}\u{430}. \u{41E}\u{447}\u{456}\u{43A}\u{443}\u{432}\u{430}\u{43B}\u{430}\u{441}\u{44C} \u{43A}\u{43B}\u{430}\u{432}\u{456}\u{448}\u{430} "${keys[currentKeyIndex]}", \u{430}\u{43B}\u{435} \u{432}\u{438} \u{43D}\u{430}\u{442}\u{438}\u{441}\u{43D}\u{443}\u{43B}\u{438} "${pressedKey}"`
+    });
+});
+newGameButton.addEventListener('click', startNewGame);
 
-},{"./js/press-key":"7ZNkn","./js/chart":"hCAGV"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequiref209", {})
+},{}]},["1h9Rl","7ZNkn"], "7ZNkn", "parcelRequiref209", {})
 
-//# sourceMappingURL=homework-5.31b563d9.js.map
+//# sourceMappingURL=homework-5.c52b8c02.js.map

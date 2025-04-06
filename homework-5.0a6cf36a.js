@@ -160,7 +160,7 @@
       });
     }
   }
-})({"5j6Kf":[function(require,module,exports,__globalThis) {
+})({"fosxE":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -168,7 +168,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "d68ad56631b563d9";
+module.bundle.HMR_BUNDLE_ID = "d08d11670a6cf36a";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -666,10 +666,95 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"a0t4e":[function(require,module,exports,__globalThis) {
-var _pressKey = require("./js/press-key");
-var _chart = require("./js/chart");
+},{}],"hCAGV":[function(require,module,exports,__globalThis) {
+const chartData = {
+    labels: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+    ],
+    datasets: [
+        {
+            label: "\u041F\u0440\u043E\u0434\u0430\u0436\u0456 \u0437\u0430 \u043E\u0441\u0442\u0430\u043D\u043D\u0456\u0439 \u043C\u0456\u0441\u044F\u0446\u044C",
+            data: [
+                150,
+                220,
+                180,
+                200,
+                250,
+                300,
+                280,
+                350,
+                400,
+                380,
+                420,
+                450,
+                500,
+                550,
+                600,
+                650,
+                700,
+                750,
+                800,
+                850,
+                900,
+                950,
+                1000,
+                1050,
+                1100,
+                1150,
+                1200,
+                1250,
+                1300,
+                1350
+            ],
+            backgroundColor: "#2196f3",
+            borderColor: "#2196f3",
+            borderWidth: 1
+        }
+    ]
+};
+const canvas = document.querySelector('#sales-chart');
+const salesChart = new Chart(canvas, {
+    type: 'bar',
+    data: chartData,
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
 
-},{"./js/press-key":"7ZNkn","./js/chart":"hCAGV"}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequiref209", {})
+},{}]},["fosxE","hCAGV"], "hCAGV", "parcelRequiref209", {})
 
-//# sourceMappingURL=homework-5.31b563d9.js.map
+//# sourceMappingURL=homework-5.0a6cf36a.js.map
