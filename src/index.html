@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/BrightTheme.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
-    <script src="./index.js"></script>
+    <section class="press-game">
+        <h1 id="status">Натисни вказану клавішу:</h1>
+        <p id="key"></p>
+        <button type="button" id="new-game">Нова гра</button>
+    </section>
+    <section class="chart-js">
+        <h2>Chart JS</h2>
+        <canvas id="sales-chart" width="400" height="400"></canvas>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotifyMobile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>

@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@pnotify/core": "^5.2.0",
     "parcel": "^2.14.4"
   },
   "dependencies": {
