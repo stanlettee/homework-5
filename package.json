@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --no-cache --public-url",
+    "build": "parcel build src/index.html --no-cache",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
@@ -16,7 +16,8 @@
   "devDependencies": {
     "@pnotify/core": "^5.2.0",
     "parcel": "^2.14.4",
-    "parcel-reporter-clean-dist": "^1.0.4"
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^2.0.1"
   },
   "dependencies": {
     "gh-pages": "^6.3.0"
