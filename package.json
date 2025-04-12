@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --no-cache",
+    "build": "parcel build src/index.html --no-cache --public-url /homework-5",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
