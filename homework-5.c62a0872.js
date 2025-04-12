@@ -1,2 +1,0 @@
-import"./homework-5.d0e6940e.js";import"./homework-5.a45b8c80.js";var r=globalThis,e={},o={},i=r.parcelRequiref209;null==i&&((i=function(r){if(r in e)return e[r].exports;if(r in o){var i=o[r];delete o[r];var t={id:r,exports:{}};return e[r]=t,i.call(t.exports,t,t.exports),t.exports}var a=Error("Cannot find module '"+r+"'");throw a.code="MODULE_NOT_FOUND",a}).register=function(r,e){o[r]=e},r.parcelRequiref209=i),i.register,i("eIxjM"),i("fijFM");
-//# sourceMappingURL=homework-5.c62a0872.js.map
